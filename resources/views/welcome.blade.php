@@ -81,7 +81,7 @@
                 @if (Route::has('login'))
                     @auth
                         <a href="{{ url('/dashboard') }}"
-                            class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                            class="md:block hidden py-3 bg-indigo-950 text-white text-base px-5 rounded-full hover:bg-red-700 transition duration-500">Dashboard</a>
                     @else
                         <a href="{{ route('login') }}"
                             class="md:block hidden py-3 bg-indigo-950 text-white text-base px-5 rounded-full hover:bg-red-700 transition duration-500">Log
@@ -104,7 +104,7 @@
     </nav>
     <!-- mega menu floating dropdown -->
     <div id="dropdown-menu"
-        class="megamenu absolute top-28 justify-center flex flex-col hidden px-5 lg:hidden md:px-10 w-full">
+        class="megamenu absolute top-28 justify-center flex-col hidden px-5 lg:hidden md:px-10 w-full">
         <div class="flex flex-col bg-white p-5 md:p-8 rounded-2xl gap-y-5">
             <ul class="flex flex-col gap-y-5">
                 <li><a href="#" class="text-indigo-950 hover:text-red-700">Beranda</a></li>
